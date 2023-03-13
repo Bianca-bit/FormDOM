@@ -1,20 +1,53 @@
-.body {
-    background-color: rgb(39, 39, 39);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-. {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.main-body {
+  min-height: 100vh;
+  background-color: black;
 }
 
-.box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.main-content {
+  min-height: 100vh;
+  background-image: url(https://files.tecnoblog.net/wp-content/uploads/2021/10/mortal-kombat-11.png);
+  background-repeat: no-repeat;
+  display: flex;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 24px;
+  border-radius: 12px;
+  gap: 15px;
+  margin: 0 auto;
+
+}
+
+.form .controlador {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.controlador input {
+  padding: 12px;
+  background-color: rgb(225, 220, 214);
+  border: none;
+  border-radius: 12px;
+}
+
+/*@merdia{max-widh: 768px} {
+
+  .main-content {
+
+    margin: 12px;
   }
-  
-  .box div {
-    width: 100px;
-    height: 100px;
-  }
+}
